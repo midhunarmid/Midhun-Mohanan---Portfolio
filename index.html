@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Midhun Mohanan</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Midhun Mohanan</title><meta name="description" content="Midhun Mohanan — Solution Architect in Kochi with 15 years of building Android and Flutter apps, sharing how it's done."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,6 +131,8 @@ h2{font-size:clamp(30px, 5vw, 44px); line-height:1.1; font-weight:800}
 .app .chips{margin-top:auto; padding-top:4px}
 .app.todo{border-style:dashed; background:transparent}
 .app.todo .app-icon{background:var(--surface-2); color:var(--muted)}
+.app-links{display:flex; flex-wrap:wrap; gap:8px}
+.app-links a{padding:8px 14px; border-radius:999px; border:1px solid var(--line); background:var(--surface-2); text-decoration:none; color:var(--ink); font-weight:700; font-size:14px}
 .todo-note{font-family:var(--mono); font-size:13px; color:var(--code-c)}
 
 /* Teach */
@@ -148,6 +149,8 @@ h2{font-size:clamp(30px, 5vw, 44px); line-height:1.1; font-weight:800}
 .posts{display:grid; gap:12px; margin-top:28px}
 .post{display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md); padding:18px 20px}
 .post > div{min-width:0}
+a.post{text-decoration:none; color:inherit; transition:border-color .2s}
+a.post:hover{border-color:var(--blue)}
 .post .lvl{font-family:var(--mono); font-size:12px; font-weight:600; padding:4px 10px; border-radius:8px; background:var(--green-soft); color:var(--green); white-space:nowrap}
 .post .lvl.mid{background:var(--sun-soft); color:var(--sun)}
 .post h3{font-size:18px; font-weight:700}
@@ -203,7 +206,7 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
 
 <header class="appbar">
   <div class="wrap">
-    <a class="brand" href="#home"><span class="brand-dot">M</span><span>Midhun <small>v14.0.0</small></span></a>
+    <a class="brand" href="#home"><span class="brand-dot">M</span><span>Midhun <small>v15.0.0</small></span></a>
     <button class="icon-btn" id="themeBtn" aria-label="Switch light or dark theme">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     </button>
@@ -216,11 +219,11 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
     <div class="wrap hero-grid">
       <div>
         <p class="hello">void main() =&gt; runApp(Midhun());</p>
-        <h1>I build mobile apps, then I teach <em>you</em> how.</h1>
-        <p class="lede">Hi, I'm Midhun Mohanan. Solutions Architect at IBS Software in Kochi, with 14+ years shipping Android and Flutter apps. These days I spend as much energy helping students write their first widget as I do designing systems.</p>
+        <h1>15 years of building apps. I’m sharing <em>how I did</em> it.</h1>
+        <p class="lede">Hi, I'm Midhun Mohanan. Solution Architect at IBS Software in Kochi, with a decade and a half of shipping Android and Flutter apps. These days I spend as much energy helping students write their first widget as I do designing systems.</p>
         <div class="chips">
           <span class="chip a">Android</span><span class="chip a">Kotlin</span><span class="chip a">Java</span>
-          <span class="chip f">Flutter</span><span class="chip f">Dart</span><span class="chip">Solution architecture</span>
+          <span class="chip f">Flutter</span><span class="chip f">Dart</span><span class="chip">Solution Architect</span>
         </div>
         <div class="cta">
           <a class="btn primary" href="#teach">Learn with me</a>
@@ -231,8 +234,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
 <pre><span class="k">class</span> <span class="t">Midhun</span> <span class="k">extends</span> <span class="t">StatelessWidget</span> {
   <span class="k">@override</span>
   <span class="t">Widget</span> build(<span class="t">BuildContext</span> context) =&gt; <span class="t">Mentor</span>(
-    experience: <span class="s">'14+ years'</span>,
-    stack: [<span class="t">Android</span>, <span class="t">Kotlin</span>, <span class="t">Flutter</span>, <span class="t">Dart</span>],
+    experience: <span class="s">'15+ years'</span>,
+    stack: [<span class="t">Android</span>, <span class="t">Kotlin</span>, <span class="t">Java</span>, <span class="t">Flutter</span>, <span class="t">Dart</span>],
     basedIn: <span class="s">'Kerala, India'</span>,
     favouritePart: <span class="t">Teaching</span>.students, <span class="c">// always</span>
   );
@@ -263,7 +266,7 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
 
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><b>14+</b><span>years in mobile</span></div>
+      <div class="stat"><b>15+</b><span>years in mobile</span></div>
       <div class="stat"><b>4</b><span>companies, one long arc</span></div>
       <div class="stat"><b>2</b><span>platforms mastered</span></div>
       <div class="stat"><b>3</b><span>team awards</span></div>
@@ -281,8 +284,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <div class="node"></div>
           <div class="c-body">
             <div class="c-meta"><span class="hash">a7f3c21</span><span class="tag">HEAD → main</span><span>Dec 2024 – now</span></div>
-            <h3>Solutions Architect <span>@ IBS Software</span></h3>
-            <p>Designing mobile solutions end to end, solving the hard problems before a line of code gets written. Kochi, Kerala.</p>
+            <h3>Solution Architect <span>@ IBS Software</span></h3>
+            <p>Architecting mobile solutions for airlines and the travel, tourism and hospitality world, from booking to boarding and beyond. Solving the hard problems before a line of code gets written.</p>
           </div>
         </div>
         <div class="commit">
@@ -290,7 +293,7 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <div class="c-body">
             <div class="c-meta"><span class="hash">5e19b08</span><span>May 2021 – Dec 2024</span></div>
             <h3>Assistant Consultant <span>@ Tata Consultancy Services</span></h3>
-            <p>Delivered cross-platform Flutter apps for Android, iOS and the web on enterprise projects.</p>
+            <p>Started on Android in the travel, tourism and hospitality space, building Lounge Management and Meet &amp; Greet apps for airport ground staff and crew. Then moved to Flutter to lead the front-end Customer Identity team for the Tata Neu e-commerce super app, owning authentication, address management and profile, and designing the screens and features customers love to use.</p>
           </div>
         </div>
         <div class="commit">
@@ -298,7 +301,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <div class="c-body">
             <div class="c-meta"><span class="hash">c40d7aa</span><span>Mar 2020 – Mar 2021</span></div>
             <h3>Product Lead <span>@ Pinmicro</span></h3>
-            <p>Led the mobile team at a Japanese start-up building a trusted indoor location identification platform, spun off from Innovature.</p>
+            <p>A sister company to Innovature, focused on IoT. We built our product around BLE, playing with beacons and triangulation logic to plot beacon and people positions indoors.</p>
+            <p>Proudly the official event partner for CEATEC 2019, Tokyo. I led the official CEATEC app: a Flutter front end on native Android and iOS SDKs. It hit #1 on both the Play Store and App Store charts and stayed there throughout the event, and the team took home the Team Awesome Award.</p>
           </div>
         </div>
         <div class="commit">
@@ -306,7 +310,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <div class="c-body">
             <div class="c-meta"><span class="hash">19ae4f2</span><span>Mar 2011 – Feb 2020</span></div>
             <h3>Tech Lead <span>@ Innovature Labs</span></h3>
-            <p>Nine years building elegant Android apps for global clients, growing from developer to leading the team.</p>
+            <p>Where it all began. Joined as a fresher and grew from Trainee to Engineer, Senior Engineer and Tech Lead, learning the baby steps of engineering alongside an amazing team. Wrote my first Android code on Eclair, shipped my first app on Froyo, and took detours through Tizen, BlackBerry, Appcelerator Titanium and React, always finding my way back to Android. Then came Flutter, and it was love at first sight.</p>
+            <p>Named Employee of the Year 2017 for keeping the fun alive alongside the work. Thank you, Innovature: this is the place I love, and I hope to come back one day before I hang up my keyboard.</p>
           </div>
         </div>
         <div class="commit edu">
@@ -314,7 +319,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <div class="c-body">
             <div class="c-meta"><span class="hash">0000001</span><span class="tag">initial commit</span><span>2007 – 2010</span></div>
             <h3>BCA, Computer Science <span>@ MG University</span></h3>
-            <p>Nirmala College of Information Technology, Chalakudy. Where it all started.</p>
+            <p>Nirmala College of Information Technology, Chalakudy. The very first commit. I walked in curious about computers and walked out knowing I wanted to build software for life.</p>
+            <p>Much of that is thanks to our HOD, Lekha Vasudevan, who patiently walked us through OOP concepts and DSA topics with examples of her own, until classes, pointers and linked lists finally made sense. The best teacher a student could ask for, and the reason I still teach with real examples today.</p>
           </div>
         </div>
       </div>
@@ -327,8 +333,8 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
 
 <span class="k">dependencies</span>:
   <span class="t">android</span>:
-    kotlin: <span class="s">^14.0.0</span>  <span class="c"># years, not versions</span>
-    java: <span class="s">^14.0.0</span>
+    kotlin: <span class="s">^15.0.0</span>  <span class="c"># years, not versions</span>
+    java: <span class="s">^15.0.0</span>
   <span class="t">flutter</span>:
     dart: <span class="s">any</span>  <span class="c"># Android, iOS, web</span>
   websocket: <span class="s">any</span>
@@ -342,7 +348,7 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <h3 style="font-size:24px">What I bring to a team</h3>
           <p class="lede">Native Android depth from the Java and Kotlin years, plus cross-platform reach with Flutter. I care about apps that are fast, scalable and pleasant to use, and about teams where juniors grow quickly.</p>
           <div class="chips">
-            <span class="chip">Architecture</span><span class="chip">Team leadership</span><span class="chip">Performance</span>
+            <span class="chip">Architect</span><span class="chip">Team leadership</span><span class="chip">Performance</span>
             <span class="chip">Real-time apps</span><span class="chip">Code review</span><span class="chip">AI-assisted dev</span>
           </div>
         </div>
@@ -369,11 +375,12 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
           <p>Nine years of Android apps across domains at Innovature Labs, from first sketch to store release.</p>
           <div class="chips"><span class="chip a">Java</span><span class="chip a">Kotlin</span></div>
         </article>
-        <article class="app todo">
-          <div class="app-icon">+</div>
-          <h3>Your next favourite app</h3>
-          <p>Space for a Play Store app or GitHub repo.</p>
-          <span class="todo-note">// TODO(midhun): add project link</span>
+        <article class="app">
+          <div class="app-icon" style="background:var(--sun)">SE</div>
+          <h3>ScoreEase</h3>
+          <p>A free score keeper for game nights and matches. My pet project: it started as a simple app, got vibe coded with Antigravity, then polished with Claude into a production-ready app people love to use.</p>
+          <div class="chips"><span class="chip f">Flutter</span><span class="chip">Open source</span><span class="chip">Free</span></div>
+          <div class="app-links"><a href="https://scoreease.armid.in/" target="_blank" rel="noopener">Try it live</a><a href="https://github.com/midhunarmid/scoreease" target="_blank" rel="noopener">GitHub</a></div>
         </article>
       </div>
     </div>
@@ -384,7 +391,7 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
     <div class="wrap">
       <div class="teach">
         <div class="file">lib/screens/teach.dart</div>
-        <p class="quote">I teach the way I wish someone had taught me in 2011: patiently, with real code, and no question too small.</p>
+        <p class="quote">I learned programming from my HOD, Lekha Vasudevan, and I try to teach the way she did: patiently, with real code, and no question too small.</p>
         <div class="grid3">
           <div class="way">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg></div>
@@ -411,24 +418,30 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
     <div class="wrap">
       <div class="file">lib/screens/notes.dart</div>
       <h2>Notes for students</h2>
-      <p class="lede">Tutorials I'm writing for people starting out. New posts land here first.</p>
+      <p class="lede">Tutorials I write on Medium for people starting out with Flutter.</p>
       <div class="posts">
-        <article class="post">
+        <a class="post" href="https://medium.com/@midhunarmid/mastering-flutter-basics-a-comprehensive-guide-to-flutter-fundamentals-25a5b8de723e" target="_blank" rel="noopener">
           <span class="lvl">Beginner</span>
-          <div><h3>Kotlin to Dart: a mental map for Android devs</h3><p>What carries over, what doesn't, and the three things that trip everyone up.</p></div>
-          <span class="soon">coming soon</span>
-        </article>
-        <article class="post">
+          <div><h3>Mastering Flutter Basics</h3><p>A friendly tour of the fundamentals: widgets, layouts, input, theming, navigation and beyond.</p></div>
+          <span class="soon">read →</span>
+        </a>
+        <a class="post" href="https://medium.com/@midhunarmid/exploring-the-essence-of-flutter-widgets-8018d6809808" target="_blank" rel="noopener">
           <span class="lvl">Beginner</span>
-          <div><h3>State management, explained with a tea shop</h3><p>setState, Provider and Riverpod through orders, counters and a busy kitchen.</p></div>
-          <span class="soon">coming soon</span>
-        </article>
-        <article class="post">
+          <div><h3>Exploring the Essence of Flutter Widgets</h3><p>Everything is a widget. Stateless vs Stateful, explained with simple examples.</p></div>
+          <span class="soon">read →</span>
+        </a>
+        <a class="post" href="https://medium.com/@midhunarmid/state-state-management-in-flutter-53338aaa0a1a" target="_blank" rel="noopener">
           <span class="lvl mid">Intermediate</span>
-          <div><h3>Real-time Flutter apps with WebSockets</h3><p>Reconnects, back-pressure and keeping the UI calm when the network isn't.</p></div>
-          <span class="soon">coming soon</span>
-        </article>
+          <div><h3>State &amp; State Management in Flutter</h3><p>Widget-level vs app-wide state, and a tour of the built-in and third-party options.</p></div>
+          <span class="soon">read →</span>
+        </a>
+        <a class="post" href="https://medium.com/@midhunarmid/flutter-making-databases-fun-with-helper-methods-in-sqflite-e5100f409eac" target="_blank" rel="noopener">
+          <span class="lvl mid">Intermediate</span>
+          <div><h3>Making Databases Fun with Sqflite</h3><p>Helper methods vs raw SQL, transactions, and keeping SQL injection out.</p></div>
+          <span class="soon">read →</span>
+        </a>
       </div>
+      <div class="links"><a href="https://medium.com/@midhunarmid" target="_blank" rel="noopener">All posts on Medium →</a></div>
     </div>
   </section>
 
@@ -474,8 +487,6 @@ footer{padding-block:32px; text-align:center; font-family:var(--mono); font-size
       </div>
       <div class="links">
         <a href="https://www.linkedin.com/in/midhunarmid" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://twitter.com/midhunarmid" target="_blank" rel="noopener">X / Twitter</a>
-        <a href="https://about.me/midhunarmid" target="_blank" rel="noopener">about.me</a>
       </div>
       <p class="locales">supportedLocales: [en, ml, ta] <span class="c">// English, Malayalam, a little Tamil</span></p>
     </div>
